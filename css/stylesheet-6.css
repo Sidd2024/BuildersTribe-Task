@@ -1,0 +1,117 @@
+/* Inline Block display for tags and banner */
+.inline-block,.inline-block-banner,.vertical-hr{
+    display: inline-block;
+}
+/* Text Banner CSS */
+.text-banner{
+    max-width: 400px;
+    text-align: center;
+    margin-top: 50px;
+}
+/* child elements of text banner */
+.inline-block-banner{
+    max-width: 160px;
+    position: relative;
+    vertical-align: top;
+}
+.inline-block-banner > h5{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #A9A9A9;
+}
+.inline-block-banner > h1{
+    font-size: 50px;
+}
+/* Vertical Divider */
+.divider-outer {
+    width: 1.2px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+.divider-inner {
+    position: absolute;
+    width:100%;
+    height: 14%;
+    top: 3%;
+    background: gray;
+    box-shadow: 0px 0px 50px 30px gray;
+    }
+/* MEDIA QUERIES */
+
+/* Tablet(720px) */
+@media (min-width: 720px) {
+    /* Text Banner Changes */
+    .text-banner{
+        max-width: 800px;
+        height: auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .inline-block-banner{
+        max-width: 320px;
+        position: relative;
+        vertical-align: top;
+    }
+    .inline-block-banner > h5{
+        font-size: 20px;
+    }
+    .inline-block-banner > h1{
+        font-size: 70px;
+    }
+    /* Vertical Divider Changes */
+    .divider-outer{
+        width: 2px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .divider-inner{
+    position: absolute;
+    width:100%;
+    height: 20%;
+    top: 3%;
+    background: black;
+    box-shadow: 0px 0px 50px 30px black;
+    }
+}
+/* Desktop(1024px) */
+@media (min-width: 1024px) {
+    /* Text Banner Changes */
+    .text-banner{
+        max-width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .inline-block-banner{
+        max-width: 450px;
+        height: 600px;
+        position: relative;
+        vertical-align: top;
+    }
+    .inline-block-banner > h5{
+        font-size: 35px;
+    }
+    .inline-block-banner > h1{
+        font-size: 140px;
+    }
+    /* Vertical Divider Changes */
+    .divider-outer{
+        width: 2px;
+        margin-left: 110px;
+        margin-right: 120px;
+    }
+    .divider-inner{
+    height: 23%;
+    top: 3%;
+    }
+    /* Mentor Profile View Changes */
+    .program-view-mentor-profile{
+        max-width: 300px;
+        width: 250px;
+        margin: 65px;
+        margin-bottom: 20px;
+    }
+}
